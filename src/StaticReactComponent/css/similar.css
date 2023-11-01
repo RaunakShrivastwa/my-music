@@ -1,0 +1,46 @@
+.similar-body {
+    max-height: 100px !important;
+}
+
+
+.table-data::-webkit-scrollbar {
+    width: 0 !important;
+
+}
+
+/* CustomAudioPlayer.css */
+.custom-audio-player-container {
+    background-color: #333;
+    border: 1px solid #666;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.custom-audio-player {
+    width: 100%;
+
+}
+
+.custom-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.custom-button {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #3498db;
+}
