@@ -24,7 +24,7 @@ const MusicBanner = ({ song }) => {
                                     alt="..."
                                 />
                             </div>
-                            <div className="col-md-8">
+                            <div className="col-md-8 p-3">
                                 <div className="card-body text-white">
                                     <h5 className="card-title">{song?.songName || "Ishaq me "}</h5>
                                     <span className="d-flex justify-content-end text-white">851 follower</span>

@@ -7,6 +7,7 @@ function MusicBody() {
     const [songs, setSongs] = useState(); // Change "song" to "songs" for consistency
     const [song, setSong] = useState();
 
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -28,7 +29,7 @@ function MusicBody() {
                 <div className='row'>
 
                     <MusicBanner song={song} />
-                    <SimilarArtist />
+                    <SimilarArtist songs={songs} setSong={setSong}/>
 
                 </div>
 
