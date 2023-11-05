@@ -31,7 +31,7 @@ body {
 }
 
 .rr {
-    font-size: 80%;
+    font-size: 90%;
 }
 
 .view {
@@ -234,8 +234,45 @@ tr {
     margin-top: 10px !important;
 }
 
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #0c1027;
+
+}
+
+
+.loader:before,
+.loader:after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px rgba(179, 53, 220, 1) inset;
+}
+
+.loader:after {
+    box-shadow: 0 2px 0 #FF3D00 inset;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
 @media only screen and (max-width: 770px) {
     .foot {
         display: none;
+    }
+
+    .bb {
+        width: 100% !important;
     }
 }

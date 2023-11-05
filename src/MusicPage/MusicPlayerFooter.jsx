@@ -1,20 +1,22 @@
 import React from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 
-function MusicPlayerFooter() {
+function MusicPlayerFooter({ song, addFavorite }) {
     return (
         <footer className="position-fixed foot">
             <div className="active-song-description">
                 {/* Song image */}
                 <div id="song-image">
-                    <img style={{ borderRadius: '50%' }} src="https://i.ytimg.com/vi/iF6L0mB1bEA/maxresdefault.jpg" alt="Song Cover" />
+
+                    <img style={{ borderRadius: '50%' }} src={song?.profile} alt="Song Cover" />
                 </div>
                 {/* Song name and author */}
                 <div className="song-desc">
                     <div className="tt1">
-                        Hai Dil Ye Mera
+                        {song?.songName}
                     </div>
                     <div className="tt1">
-                        Arijit Singh
+                        {song?.artistName}
                     </div>
                 </div>
                 {/* Heart and ban icons */}
@@ -29,27 +31,15 @@ function MusicPlayerFooter() {
             </div>
             {/* Main player controls */}
             <div className="player">
-                <div className="controls">
-                    <div><i className="fa fa-random tt1"></i></div>
-                    <div><i className="fa fa-step-backward tt1"></i></div>
-                    <div><i className="fa fa-pause-circle tt1"></i></div>
-                    <div><i className="fa fa-step-forward tt1"></i></div>
-                    <div><i className="fa fa-redo tt1"></i></div>
-                </div>
+
                 {/* Slider */}
-                <div id="slider">
-                    {/* Current time */}
-                    <div className="time">
-                        1:39
-                    </div>
-                    <div className="slidecontainer">
-                        <input type="range" min="0" max="100" value="0" className="slider" id="myRange" />
-                    </div>
-                    {/* Total time */}
-                    <div className="time">
-                        4:44
-                    </div>
-                </div>
+                <ReactAudioPlayer
+                    src={song?.song}
+                    // autoPlay
+                    controls
+                    volume={0.7}
+                    className="custom-audio-player p-2"
+                />
             </div>
             {/* Other icons including volume slider */}
             <div className="extras">
