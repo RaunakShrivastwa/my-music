@@ -35,7 +35,7 @@ function MusicPlayerFooter({ song, addFavorite }) {
                 {/* Slider */}
                 <ReactAudioPlayer
                     src={song?.song}
-                    // autoPlay
+                    autoPlay
                     controls
                     volume={0.7}
                     className="custom-audio-player p-2"

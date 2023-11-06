@@ -47,6 +47,7 @@ const MusicBanner = ({ song, addFavorite }) => {
                                 <p className='text-white'>{song?.songName}</p>
                                 <ReactAudioPlayer
                                     src={song?.song}
+                                    autoPlay
                                     controls
                                     volume={0.7}
                                     className=""
