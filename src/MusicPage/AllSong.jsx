@@ -12,7 +12,7 @@ function AllSong({ setSong, songs, idF }) {
 
 
     const containerStyle = {
-        maxHeight: '300px',
+        maxHeight: '270px',
         overflowY: 'auto',
     };
 

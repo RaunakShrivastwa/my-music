@@ -5,7 +5,7 @@ import axios from 'axios';
 function RecentMusic({ setSong }) {
     const [recent, setRecent] = useState();
     const containerStyle = {
-        maxHeight: '300px',
+        maxHeight: '270px',
         overflowY: 'auto',
     };
 

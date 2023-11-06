@@ -20,14 +20,7 @@ function MusicPlayerFooter({ song, addFavorite }) {
                     </div>
                 </div>
                 {/* Heart and ban icons */}
-                <div className="heart-and-ban-icon">
-                    <span>
-                        <i className="fa fa-heart tt1"></i>
-                    </span>
-                    <span>
-                        <i className="fa fa-ban tt1"></i>
-                    </span>
-                </div>
+
             </div>
             {/* Main player controls */}
             <div className="player">
