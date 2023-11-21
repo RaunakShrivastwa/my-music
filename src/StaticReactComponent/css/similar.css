@@ -92,6 +92,10 @@ td>span:hover {
     height: 250px !important;
 }
 
+/* Change placeholder text color */
+
+
+
 @media (min-width: 769px) {
     .audio-player-small-devices {
         display: none;

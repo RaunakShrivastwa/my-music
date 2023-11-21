@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
+import '../StaticReactComponent/css/footerLogo.css';
 
 function MusicPlayerFooter({ song, addFavorite }) {
     return (
         <footer className="position-fixed foot">
             <div className="active-song-description">
                 {/* Song image */}
-                <div id="song-image">
+                <div id="song-image" className='rotate'>
 
                     <img style={{ borderRadius: '50%' }} src={song?.profile} alt="Song Cover" />
                 </div>
@@ -16,7 +17,7 @@ function MusicPlayerFooter({ song, addFavorite }) {
                         {song?.songName}
                     </div>
                     <div className="tt1">
-                        {song?.artistName}
+                        <marquee behavior="" direction=""> {song?.artistName}</marquee>
                     </div>
                 </div>
                 {/* Heart and ban icons */}
