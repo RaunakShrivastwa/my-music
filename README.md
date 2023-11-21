@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Teaching Website - Spring Boot and React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Teaching Website project! This is a platform for online education, where students can enroll in various courses and access a secure dashboard for their educational journey.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Teaching Website is a full-stack web application built using Spring Boot for the backend and React for the frontend. It offers a comprehensive educational experience, allowing students to explore and enroll in various courses. The website incorporates the Razorpay payment gateway for easy course enrollment and provides students with a secure dashboard for tracking their progress.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Course Enrollment**: Students can browse a variety of courses and enroll in the ones that suit their needs.
+- **Student Dashboard**: A secure, authenticated dashboard for students to access course materials, track progress, and view payment history.
+- **Payment Gateway Integration**: The integration of Razorpay for secure and hassle-free payments.
+- **Database Integration**: Utilizes MySQL and JPA for database management and Spring Security for authentication.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
 
-### `npm run build`
+- Spring Boot
+- React
+- MySQL
+- JPA (Java Persistence API)
+- Razorpay
+- Spring Security
+- Devtools
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project on your local machine, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/teaching-website.git
+   ```
 
-### `npm run eject`
+2. Navigate to the project's root directory:
+   ```sh
+   cd teaching-website
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Set up the backend:
+   - Configure your MySQL database settings in `application.properties`.
+   - Build and run the Spring Boot application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Set up the frontend:
+   - Navigate to the `frontend` directory.
+   - Install Node.js and the required dependencies:
+     ```sh
+     npm install
+     ```
+   - Start the React development server:
+     ```sh
+     npm start
+     ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Access the application in your browser: [http://localhost:3000](http://localhost:3000)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+The project is structured as follows:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `backend/`: Contains the Spring Boot application.
+- `frontend/`: Contains the React frontend.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Configuration
 
-### Code Splitting
+Before running the project, make sure to configure the necessary settings. Key configuration files to check are:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `backend/src/main/resources/application.properties`: Configure your database and Razorpay API settings.
+- `frontend/src/config.js`: Set your frontend configurations if necessary.
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Visit [http://localhost:3000](http://localhost:3000) to access the website.
+- Explore the courses, enroll, and enjoy your learning journey.
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+We welcome contributions from the community. If you'd like to contribute to the project, please follow our [Contributing Guidelines](CONTRIBUTING.md).
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the [MIT License](LICENSE).
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using our Teaching Website project. We hope it helps you create a compelling online education platform! If you have any questions or need assistance, feel free to reach out to us.

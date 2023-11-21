@@ -12,6 +12,7 @@ const MusicBanner = ({ song, addFavorite }) => {
 
 
     const toggleFavorite = (song) => {
+        alert('helloo')
         setIsFavorite(!isFavorite);
         addFavorite({ isFavorite, song })
 
