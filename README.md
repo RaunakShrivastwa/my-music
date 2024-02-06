@@ -14,6 +14,11 @@ Welcome to the Teaching Website project! This is a platform for online education
 - [Contributing](#contributing)
 - [License](#license)
 
+-Project Video
+https://github.com/RaunakShrivastwa/my-music/assets/121729066/86a21377-5a5c-42f5-b9a4-21457d3ca9b5
+
+
+
 ## Introduction
 
 The Teaching Website is a full-stack web application built using Spring Boot for the backend and React for the frontend. It offers a comprehensive educational experience, allowing students to explore and enroll in various courses. The website incorporates the Razorpay payment gateway for easy course enrollment and provides students with a secure dashboard for tracking their progress.
